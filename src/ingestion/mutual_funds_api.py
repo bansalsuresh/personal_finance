@@ -15,8 +15,7 @@ from dataclasses import dataclass
 from datetime import date
 from pathlib import Path
 
-URL = "https://portal.amfiindia.com/spages/eNAVAll.txt"
-LOCAL_COPY = Path("NAVAll.txt")
+from config.mutual_fund import URL, LOCAL_COPY
 
 @dataclass
 class MutualFund:
