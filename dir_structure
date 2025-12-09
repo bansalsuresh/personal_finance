@@ -1,0 +1,26 @@
+project-name/
+│
+├─ data/
+│   ├─ raw/          # Unmodified downloaded data
+│   ├─ processed/    # Cleaned/feature-engineered data
+│
+├─ notebooks/        # Jupyter notebooks for exploration
+│
+├─ src/              # All Python source code
+│   ├─ __init__.py
+│   ├─ config/       # Settings, constants
+│   ├─ utils/        # Helpers (logging, file ops, etc.)
+│   ├─ ingestion/    # API calls, web scraping
+│   │   ├─ mutual_funds_api.py
+│   ├─ processing/   # Cleaning, transformations
+│   ├─ models/       # ML/LLM code (if any)
+│   └─ app/          # Streamlit/FastAPI app (optional)
+│
+├─ tests/            # Unit tests
+│
+├─ scripts/          # One-off scripts (ETL jobs, cron-like tasks)
+│
+├─ requirements.txt  # Python dependencies
+├─ .env.example      # Environment variable template
+├─ .gitignore
+└─ README.md
