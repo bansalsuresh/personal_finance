@@ -1,0 +1,2 @@
+8 Dec - Download NAV information from AMFI and extract NAV for ISIN number
+9 Dec - Create and connect to repositry on github
