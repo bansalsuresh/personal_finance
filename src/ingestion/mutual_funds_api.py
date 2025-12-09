@@ -8,6 +8,7 @@ Open Ended Schemes(Debt Scheme - Banking and PSU Fund)
 Aditya Birla Sun Life Mutual Fund
 119551;INF209KA12Z1;INF209KA13Z9;Aditya Birla Sun Life Banking & PSU Debt Fund  - DIRECT - IDCW;110.3373;05-Dec-2025
 119552;INF209K01YM2;-;Aditya Birla Sun Life Banking & PSU Debt Fund  - DIRECT - MONTHLY IDCW;117.6559;05-Dec-2025
+python -m src.ingestion.mutual_fund_api
 """
 
 import requests

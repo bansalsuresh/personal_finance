@@ -1,0 +1,6 @@
+Objective: Create personal finance application for
+- Tracking portfolio of all assets such as mutual funds, and stocks
+- CRUD on the portfolio
+- Analyze performance of all assets on regular basis and provide recommended actions
+- Track stock actions and update portfolio accordingly
+- Register sales of assets and compute tax liability
