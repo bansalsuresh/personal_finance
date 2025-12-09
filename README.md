@@ -1,2 +1,2 @@
 # personal_finance
-all aspects of personal finance
+Application to manage all aspects of personal finance
