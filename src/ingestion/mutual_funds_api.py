@@ -8,13 +8,12 @@ Open Ended Schemes(Debt Scheme - Banking and PSU Fund)
 Aditya Birla Sun Life Mutual Fund
 119551;INF209KA12Z1;INF209KA13Z9;Aditya Birla Sun Life Banking & PSU Debt Fund  - DIRECT - IDCW;110.3373;05-Dec-2025
 119552;INF209K01YM2;-;Aditya Birla Sun Life Banking & PSU Debt Fund  - DIRECT - MONTHLY IDCW;117.6559;05-Dec-2025
-python -m src.ingestion.mutual_fund_api
+python -m src.ingestion.mutual_funds_api
 """
 
 import requests
 from dataclasses import dataclass
 from datetime import date
-from pathlib import Path
 
 from config.mutual_fund import URL, LOCAL_COPY
 
@@ -61,20 +60,4 @@ def fetch_navs(url: str = URL) -> dict[str, MutualFund]:
             entries[mf.isin1] = mf
     return entries
 
-def main():
-    try:
-        navs = fetch_navs()
-    except Exception as exc:
-        print(f"Failed to load NAV data: {exc}")
-        return
-
-    isin = input("Enter ISIN: ").strip()
-    fund = navs.get(isin)
-    if fund:
-        print(f"NAV for {fund.scheme_name} ({fund.isin1}) as of {fund.date}: {fund.nav}")
-    else:
-        print("ISIN not found.")
-
-if __name__ == "__main__":
-    main()
 

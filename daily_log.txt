@@ -1,2 +1,11 @@
-8 Dec - Download NAV information from AMFI and extract NAV for ISIN number
-9 Dec - Create and connect to repositry on github
+8 Dec
+- Download NAV information from AMFI and extract NAV for ISIN number
+- In case the URL is not correct then look for local file
+
+9 Dec
+- Create and connect to repositry on github. 
+- Create directory structure. 
+- Refactor the code to use constants file 
+
+10 Dec
+- Wrote test file
