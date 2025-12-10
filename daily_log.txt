@@ -8,4 +8,4 @@
 - Refactor the code to use constants file 
 
 10 Dec
-- Wrote test file
+- Create UI to take isin and return mf details
